@@ -1,23 +1,12 @@
-import React from 'react';
-import Login from "./Login";
-import{BrowserRouter,Switch,Route} from 'react-router-dom';
 
-
-
-class App extends React.Component {
-  render(){
-
+import{Router as BrowserRouter,Switch,Route} from 'react-router-dom';
+import Login from './components/Login';
+function App() {
   return (
- <BrowserRouter>
- <Switch>
-   <Route exact path={Login} />
- </Switch>
- 
- </BrowserRouter>
-   
-  )
-  }
-  
+    <div className="App">
+      <Login />
+    </div>
+  );
 }
 
 export default App;
