@@ -1,11 +1,18 @@
 
 import{Router as BrowserRouter,Switch,Route} from 'react-router-dom';
-import Login from './components/Login';
+import Paper from './components/LoginStudents';
+
 function App() {
+  
   return (
     <div className="App">
-      <Login />
+      
+      
+        <Paper/>
+      
+      
     </div>
+
   );
 }
 
